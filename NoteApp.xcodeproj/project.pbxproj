@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AC567E282D5245F00075E961 /* EditView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC567E272D5245F00075E961 /* EditView.swift */; };
 		AC8203C12D4250540051FE90 /* NoteAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC8203C02D4250540051FE90 /* NoteAppApp.swift */; };
 		AC8203C32D4250540051FE90 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC8203C22D4250540051FE90 /* ContentView.swift */; };
 		AC8203C52D4250560051FE90 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AC8203C42D4250560051FE90 /* Assets.xcassets */; };
@@ -34,6 +35,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		AC567E272D5245F00075E961 /* EditView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditView.swift; sourceTree = "<group>"; };
 		AC8203BD2D4250540051FE90 /* NoteApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NoteApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC8203C02D4250540051FE90 /* NoteAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteAppApp.swift; sourceTree = "<group>"; };
 		AC8203C22D4250540051FE90 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -96,6 +98,7 @@
 			children = (
 				AC8203C02D4250540051FE90 /* NoteAppApp.swift */,
 				AC8203C22D4250540051FE90 /* ContentView.swift */,
+				AC567E272D5245F00075E961 /* EditView.swift */,
 				AC8203C42D4250560051FE90 /* Assets.xcassets */,
 				AC8203C62D4250560051FE90 /* Preview Content */,
 			);
@@ -259,6 +262,7 @@
 			files = (
 				AC8203C32D4250540051FE90 /* ContentView.swift in Sources */,
 				AC8203C12D4250540051FE90 /* NoteAppApp.swift in Sources */,
+				AC567E282D5245F00075E961 /* EditView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

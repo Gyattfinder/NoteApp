@@ -8,11 +8,18 @@
 import SwiftUI
 
 struct EditView: View {
+    @Binding var task: String
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        VStack {
+            TextField("Edit task", text: $task)
+                .padding()
+                .textFieldStyle(.roundedBorder)
+                .font(.title)
+            
+            Spacer()
+        }
+        .navigationTitle("Edit Task")
+        .padding()
     }
-}
-
-#Preview {
-    EditView()
 }
