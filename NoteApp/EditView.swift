@@ -1,18 +1,11 @@
-//
-//  EditView.swift
-//  NoteApp
-//
-//  Created by Brent Hoozee on 04/02/2025.
-//
 import SwiftUI
 
 struct EditView: View {
-    var task: String
-    @State var newTask = ""
-    
+    @Binding var task: String  // Bind de taak als een Binding
+
     var body: some View {
         VStack {
-            TextField("\(task)", text: $newTask)
+            TextField("Edit task", text: $task)  // Wijzig de taak direct
                 .padding()
                 .textFieldStyle(.roundedBorder)
                 .font(.title)
@@ -23,3 +16,4 @@ struct EditView: View {
         .padding()
     }
 }
+

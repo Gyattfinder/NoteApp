@@ -1,10 +1,3 @@
-//
-//  ContentView.swift
-//  NoteApp
-//
-//  Created by Brent Hoozee on 23/01/2025.
-//
-
 import SwiftUI
 
 class NotesView: ObservableObject {
@@ -56,33 +49,30 @@ struct ContentView: View {
                 }
                 
                 List {
-                    ForEach(viewModel.list, id: \.self) { item in
-                        
-                        NavigationLink(destination: EditView(task: item)) {
-                            Text(item)
+                    ForEach(viewModel.list.indices, id: \.self) { index in
+                        NavigationLink(destination: EditView(task: $viewModel.list[index])) {
+                            Text(viewModel.list[index])
                         }
                     }
                     .onDelete(perform: viewModel.deleteItem)
-                    
                     .onMove(perform: move)
-                }
+                } .cornerRadius(15)
                 
                 Spacer()
             }
             .navigationTitle("Notes")
             .toolbar {
-                
                 EditButton()
             }
             .padding()
         }
     }
     
-    
     func move(from source: IndexSet, to destination: Int) {
         viewModel.list.move(fromOffsets: source, toOffset: destination)
     }
 }
+
 #Preview {
     ContentView()
 }
